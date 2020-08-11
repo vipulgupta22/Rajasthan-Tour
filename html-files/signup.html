@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body{
+        background-image: url(../images/signup.jpg);
+        background-size: cover;
+        width: auto;
+        height: 100vh;
+        }
+        #box{
+            text-align: center;
+            padding-top: 10%;
+        }
+        h3{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="action.php">
+        <div id="box">
+            <pre>
+    Name      : <input type="text" name="Name"><br>
+    Email Id  : <input type="email" name="Email" required ><br>
+    Password  : <input type="password" name="password" required min="8"><br>
+    Phone No. : <input type="digit" name="PhoneNo" required><br> 
+            </pre>
+            <input type="submit" value="SignUp" style="text-align: center;">
+        </div>
+        <h3>Already Have an Account <a href="login.html"><span style="color: blue;">Login</span></a></h3>
+    </form>
+</body>
+</html>
