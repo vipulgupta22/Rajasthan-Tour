@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body{
+        background-image: url(../images/pass.jpg);
+        background-size: cover;
+        width: auto;
+        height: auto;
+        }
+        #boxr{
+            border: 5px white;
+            background-color: white;
+            margin-left: 40%;
+            margin-top: 15%;
+            width: 300px;
+            height: 200px;
+            padding-top: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="action.php">
+        <div id="boxr">
+            Email <br>
+            <input type="email" required><br>
+            New Password <br>
+            <input type="password" required ><br>
+            OTP(which is sent to your mail id)<br>
+            <input type="digit" max="6" min="6" required><br>
+            <br>
+            <input type="submit" value="Reset" style="text-align: center;">
+        </div>
+    </form>
+</body>
+</html>
