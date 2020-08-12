@@ -6,10 +6,16 @@
     <title>Tour-The-World</title>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      ul li a#active{
+      background-color: black;
+
+    }
       body{
         background-image: url(images/home2.jpeg);
         background-size: cover;
@@ -33,26 +39,48 @@
         font-family: 'Times New Roman', Times, serif;
         color: black;
     }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+      background-color:#3F4242;
+      width:auto;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color:darkgrey;
+      font-family: 'Antic Slab', serif;
+      font-size: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    ul li a:hover {
+      color: white;
+      text-decoration: none;
+    }
+    #right{
+      float: right;
+    }
    
     </style>
 </head>
 <body>
     <div class="bgimg">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">TOUR-THE-WORLD</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="html-files/cont.html">Contact</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="html-files/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="html-files/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              </ul>
-            </div>
-          </nav>
+        <ul>
+          <li><a href="#">TOUR-THE-WORLD</a></li>
+          <li ><a id="active" href="#">Home</a></li>
+          <li><a href="html-files/cont.html">Contact</a></li>
+          <li id="right"><a href="html-files/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li id="right"><a href="html-files/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
     <div id="contain">
         <h1>TOUR-THE-WORLD</h1>
         <h3>Life is short and the world is wide. I better get started....</h3>

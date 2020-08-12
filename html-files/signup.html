@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li a#active{
+      background-color: black;
+
+    }
         body{
         background-image: url(../images/signup.jpg);
         background-size: cover;
@@ -13,25 +24,66 @@
         }
         #box{
             text-align: center;
-            padding-top: 10%;
+            padding-top: 8%;
         }
         h3{
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+      background-color:#3F4242;
+      width: auto;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color:darkgrey;
+      font-family: 'Antic Slab', serif;
+      font-size: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    ul li a:hover {
+      color: white;
+    }
+    #right{
+        float: right;
+    }
+
     </style>
 </head>
 <body>
+    <div class="container">
+        <ul>
+            <li><a>TOUR-THE-WORLD</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+
+    </div>
     <form action="action.php">
         <div id="box">
             <pre>
-    Name      : <input type="text" name="Name"><br>
-    Email Id  : <input type="email" name="Email" required ><br>
-    Password  : <input type="password" name="password" required min="8"><br>
-    Phone No. : <input type="digit" name="PhoneNo" required><br> 
+    Name        : <input type="text" name="Name"><br>
+    Email Id    : <input type="email" name="Email" required ><br>
+    Password    : <input type="password" name="password" required min="8"><br>
+Confirm Password : <input type="password" name="password" required min="8"><br>
+    Phone No.   : <input type="digit" name="PhoneNo" required><br> 
             </pre>
             <input type="submit" value="SignUp" style="text-align: center;">
         </div>
+        <br>
         <h3>Already Have an Account <a href="login.html"><span style="color: blue;">Login</span></a></h3>
     </form>
 </body>

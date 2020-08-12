@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Login</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
         body{
         background-image: url(../images/signup.jpg);
         background-size: cover;
@@ -13,15 +19,56 @@
         }
         #box{
             text-align: center;
-            padding-top: 13%;
+            padding-top: 10%;
         }
         h3{
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+      background-color:#3F4242;
+      width: auto;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color:darkgrey;
+      font-family: 'Antic Slab', serif;
+      font-size: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    #right{
+        float: right;
+    }
+
+
+    ul li a:hover {
+      color: white;
+    }
+    ul li a#active{
+      background-color: black;
+
+    }
     </style>
 </head>
-<body></body>
+<body>
+    <div class="container">
+        <ul>
+            <li><a>TOUR-THE-WORLD</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+
+    </div>
     <form action="action.php">
         <div id="box">
             <pre>
@@ -30,7 +77,9 @@
             </pre>
             <input type="submit" value="Login" style="text-align: center;">
         </div>
+        <br>
         <h3><a href="Forget.html"><span style="color: blue;">Forgot Password</span></a></h3>
+        <br>
         <h3>Don't have an Account <a href="signup.html"><span style="color: blue;">Signup</span></a></h3>
     </form>
 </body>

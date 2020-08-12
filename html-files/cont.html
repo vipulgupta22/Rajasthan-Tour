@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <title>Contact</title>
     <style>
         body{
@@ -13,6 +13,10 @@
         background-size: cover;
         width: auto;
         height: auto;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
         }
         #boxr{
             text-align: center;
@@ -24,26 +28,52 @@
             text-align: center;
             padding-top: 10%;
         }
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+      background-color:#3F4242;
+      width:auto;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color:darkgrey;
+      font-family: 'Antic Slab', serif;
+      font-size: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    ul li a:hover {
+      color: white;
+      text-decoration: none;
+    }
+    ul li a#active{
+      background-color: black;
+
+    }
+    #right{
+      float: right;
+    }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">TOUR-THE-WORLD</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="../index.html">Home</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
+  <ul>
+    <li><a href="#">TOUR-THE-WORLD</a></li>
+    <li><a href="../index.html">Home</a></li>
+    <li id="right"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li id="right"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  </ul>
     <div class="box">
     <h1>CONTACT US</h1>
-    <h3>Questions which are not Anawered ? we are here to Answer.</h3>
+    <h3>Questions which are not Answered ? we are here to Answer.</h3>
     <form action="action.php">
         <div id="boxr">
         Email <br>
@@ -51,7 +81,7 @@
         Message <br>
         <input type="text" required ><br>
         <br>
-        <input type="submit" value="Thanks" style="text-align: center;">
+        <input type="submit"  value="Thanks" style="text-align: center;">
     </div>
     </form>
     </div>
