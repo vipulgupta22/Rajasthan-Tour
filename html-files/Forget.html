@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password</title>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
         body{
         background-image: url(../images/pass.jpg);
         background-size: cover;
@@ -23,9 +28,42 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         }
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+      background-color:#3F4242;
+      width: auto;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color:darkgrey;
+      font-family: 'Antic Slab', serif;
+      font-size: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    ul li a:hover {
+      color: white;
+    }
     </style>
 </head>
 <body>
+    <div class="container">
+        <ul>
+            <li><a>TOUR-THE-WORLD</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+
+    </div>
     <form action="action.php">
         <div id="boxr">
             Email <br>
