@@ -4,27 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+      #banner{
+        background-image: url(../images/pexels-sharad-bhat-3974152.jpg);
+        height: 100vh;
+        background-size: cover;
+      }
+      #banner h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top:300px;
+        padding-bottom: 0;
+      }
+      #banner a h3{
+        text-align: center;
+        text-decoration:none ;
+      }
+      #banner a{
+        padding-top: 10px;
+        color: black;
+        text-decoration:none ;
+      }
+      #banner a:hover{
+        background-color:blue;
+      color: white;
+      }
+      
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        
         #navbar{
             position: fixed;
+            background-color: darkslategrey;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
             width: 100%;
-        }
-        .navbar-brand img{
             height: 40px;
         }
-        #right{
-            float: right;
-        }
+        ul#navbar li {
+      float: left;
+    }
+    ul#navbar li a {
+      display: block;
+      color: #000000;
+      font-weight: bold;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    ul#navbar li a:hover {
+      color: white;
+    }
+    .navbar-brand img{
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    height: 30px;
+}
+  #right{
+    float: right;
+  }
+  #images{
+width:300px;
+height:300px;
+margin:10px;
+}
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+#h1line{
+  text-align: center;
+  padding-top: 15px;
+}
+#h2line{
+  text-align: center;
+  padding-top: 15px;
+}
+#footer{
+  display:flex;
+flex-wrap:wrap;
+justify-content:center;
+background-color: chocolate;
+font-size: 30px;
+padding: 10px;
+}
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
-        <a class="navbar-brand" href=""><img src="../images/IMG_20200815_211116.jpg" alt=""></a>
-        <ul class="navbar-nav">
+    <nav id="navbar">
+        <ul id="navbar">
+          <a class="navbar-brand" href=""><img src="../images/IMG_20200815_211116.jpg" alt=""></a>
           <li class="nav-item">
             <a class="nav-link" href="#">HOME</a>
           </li>
@@ -38,10 +116,28 @@
             <a class="nav-link" href="#" id="right">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="right">ABOUT</a>
+            <a class="nav-link" href="#h2line" id="right">ABOUT</a>
           </li>
         </ul>
       </nav>
-      
+      <div id="banner">
+        <h1>पधारो म्हारे देश</h1>
+        <a href="#h1line"><h3>Explore</h3></a>
+      </div>
+      <h1 id="h1line">Culture</h1><br>
+      <div class="container">
+        <img  id="images" src="../images/pexels-parv-choudhary-2870167.jpg" alt="">
+        <img id="images" src="../images/pexels-rahul-1009918.jpg" alt="">
+        <img id="images" src="../images/pexels-rahul-1009923.jpg" alt="">
+        <img id="images" src="../images/pexels-rahul-1011093.jpg" alt="">
+        <img id="images" src="../images/pexels-rahul-1371595.jpg" alt="">
+        <img id="images" src="../images/pexels-suket-dedhia-570031.jpg" alt="">
+        <img id="images" src="../images/pexels-titiksha-rout-2581260.jpg" alt="">
+        <img id="images" src="../images/pexels-flashing-moment-797824 (1).jpg" alt="">
+      </div>
+      <h1 id="h2line">About</h1><br>
+      <div id="footer">
+        Made with ❤️ by Vipul
+      </div>     
 </body>
 </html>
