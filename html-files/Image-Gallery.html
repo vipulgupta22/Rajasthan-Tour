@@ -46,7 +46,7 @@
       width: 100%;
     }
     #Gallery h1{
-      padding-top: 60px;
+      padding: 10px;
       font-family: 'Times New Roman', Times, serif;
       text-align: center;
       color: white;
@@ -79,7 +79,7 @@
   width: 60%;
   height: auto;
   padding-left: 20%;
-  padding-top: 10px;
+  padding-top:60px;
   padding-bottom: 10px;
 }
 .mySlides {
@@ -117,7 +117,7 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  padding-top: 15px;
+  padding-top: 70px;
 }
 .caption-container {
   text-align: center;
@@ -146,6 +146,7 @@
   height: 130px;
 }
 #footer{
+  padding-top: 10px;
   background-color: darkorange;
   width: 100%;
   display: flex;
@@ -185,6 +186,67 @@
           </li>
     </ul>
   </div>
+  <div id="kl">
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/1508235765_places-to-visit-in-rajasthan-_City_palace.jpg.jpg" style="width:100%"></a>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/depositphotos_187665638-stock-photo-rajasthani-maharaja-thaali-pune.jpg" style="width:100%"></a>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/depositphotos_176262544-stock-photo-close-view-colorful-decorations-hanging.jpg" style="width:100%"></a>
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/gal2.jpg" style="width:100%"></a>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/istockphoto-143176427-170667a.jpg" style="width:100%"></a>
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <a href="#"><img id="box" src="../ImageGallery/sunset-2389393__340.jpg" style="width:100%"></a>
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/1508235765_places-to-visit-in-rajasthan-_City_palace.jpg.jpg" style="width:100%" onclick="currentSlide(1)" alt="Places">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/depositphotos_187665638-stock-photo-rajasthani-maharaja-thaali-pune.jpg" style="width:100%" onclick="currentSlide(2)" alt="Food">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/depositphotos_176262544-stock-photo-close-view-colorful-decorations-hanging.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tradition">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/gal2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hotels">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/istockphoto-143176427-170667a.jpg" style="width:100%" onclick="currentSlide(5)" alt="Folk Dance">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="../ImageGallery/sunset-2389393__340.jpg" style="width:100%" onclick="currentSlide(6)" alt="Deserts">
+        </div>
+      </div>
+    </div>
+    </div>
   <div id="Gallery">
     <h1>Gallery</h1>
     <div id="container">
@@ -200,72 +262,30 @@
       <img src="../ImageGallery/photo-1584516436703-8155d867f822.jpeg" alt="">
       <img src="../ImageGallery/photo-1586334465687-b948bc3368be.jpeg" alt="">
       <img src="../ImageGallery/photo-1586356307549-32c0684da5e0.jpeg" alt="">
+      <img src="../ImageGallery/amber-fort-3101342__340.jpg" alt="">
+      <img src="../ImageGallery/depositphotos_176262544-stock-photo-close-view-colorful-decorations-hanging.jpg" alt="">
+      <img src="../ImageGallery/depositphotos_187665638-stock-photo-rajasthani-maharaja-thaali-pune.jpg" alt="">
+      <img src="../ImageGallery/depositphotos_30687747-stock-photo-caravan-in-sand-desert-dunes.jpg" alt="">
+      <img src="../ImageGallery/gal2.jpg" alt="">
+      <img src="../ImageGallery/gettyimages-143917716-2048x2048.jpg" alt="">
+      <img src="../ImageGallery/gettyimages-168534048-2048x2048.jpg" alt="">
+      <img src="../ImageGallery/gettyimages-504334858-2048x2048.jpg" alt="">
     </div>  
-  </div>
-  <div id="kl">
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/1508235765_places-to-visit-in-rajasthan-_City_palace.jpg.jpg" style="width:100%"></a>
+    <div style="text-align:center"> 
+      <button onclick="playPause()">Play/Pause</button> 
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br><br>
+      <video id="video1" width="420">
+        <source src="../ImageGallery/rajasthan-tourism-(720p).mp4" type="video/mp4">
+        <source src="../ImageGallery/rajasthan-tourism-(720p).ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
     </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/depositphotos_187665638-stock-photo-rajasthani-maharaja-thaali-pune.jpg" style="width:100%"></a>
+    <div id="footer">
+      <a id="textfoot" href="cont.html">CONTACT US</a>
     </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/depositphotos_176262544-stock-photo-close-view-colorful-decorations-hanging.jpg" style="width:100%"></a>
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/gal2.jpg" style="width:100%"></a>
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/istockphoto-143176427-170667a.jpg" style="width:100%"></a>
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <a href="#"><img id="box" src="../ImageGallery/sunset-2389393__340.jpg" style="width:100%"></a>
-    </div>
-      
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/1508235765_places-to-visit-in-rajasthan-_City_palace.jpg.jpg" style="width:100%" onclick="currentSlide(1)" alt="Places">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/depositphotos_187665638-stock-photo-rajasthani-maharaja-thaali-pune.jpg" style="width:100%" onclick="currentSlide(2)" alt="Food">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/depositphotos_176262544-stock-photo-close-view-colorful-decorations-hanging.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tradition">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/gal2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hotels">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/istockphoto-143176427-170667a.jpg" style="width:100%" onclick="currentSlide(5)" alt="Folk Dance">
-      </div>    
-      <div class="column">
-        <img class="demo cursor" src="../ImageGallery/sunset-2389393__340.jpg" style="width:100%" onclick="currentSlide(6)" alt="Deserts">
-      </div>
-    </div>
-  </div>
-  </div>
-  <div id="footer">
-    <a id="textfoot" href="cont.html">Contact Us</a>
-  </div>
   <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -295,6 +315,26 @@
       dots[slideIndex-1].className += " active";
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
+    var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
     </script>
 </body>
 </html>
