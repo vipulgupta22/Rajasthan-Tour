@@ -1,2 +1,3 @@
-Rajasthan-Tour
-It is a tour and travel website which shows how u see the world. It is under development.
+# Rajasthan-Tour
+### It is a tour and travel website which shows how u see the world. It is under development.
+## Website is live at : https://vipulgupta22.github.io/Rajasthan-Tour/
