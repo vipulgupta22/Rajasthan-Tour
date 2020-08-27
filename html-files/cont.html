@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <title>Contact</title>
+    <script> 
+      function initMap() { 
+        var test= {lat: -25.363, lng: 131.044}; 
+        var map = new google.maps.Map(document.getElementById('map'), { 
+          zoom: 4, 
+          center: test 
+        }); 
+        var marker = new google.maps.Marker({ 
+          position: test, 
+          map: map 
+        }); 
+      } 
+    </script> 
+    <script async defer 
+    src= 
+"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> 
+    </script>
     <style>
         body{
-        background-image: url(../images/contact.jpg);
+        background-image: url(https://media.giphy.com/media/IzL667EYx01N8TXN9k/giphy.gif);
         background-size: cover;
         width: auto;
-        height: auto;
+        height:100vh;
         }
         *{
             margin: 0%;
@@ -27,6 +44,7 @@
         .box{
             text-align: center;
             padding-top: 10%;
+            height: 100vh;
         }
         ul {
       list-style-type: none;
@@ -36,7 +54,9 @@
       background-color:#3F4242;
       width:auto;
     }
-
+#navbar{
+  position:sticky;
+}
     ul li {
       float: left;
     }
@@ -62,15 +82,65 @@
     #right{
       float: right;
     }
+    #map { 
+        height: 400px; 
+        width: 50%;
+        float: left; 
+       }
+       #Right{
+       
+       float: right;
+       background-color: coral;
+       } 
+       #footright{
+        width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: coral;
+         height:400px;
+       }
+       #image,#boxer,#logo{
+padding: 15px;
+        display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+       #image img{
+         width: 30%;
+         height: auto;
+         }
+  #boxer a{
+    text-decoration:none ;
+    color: black;
+  }
+  #boxer a:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  }
+  #boxera{
+    border: 3px solid black;
+    padding: 5px;
+  }
+  #Right h3{
+    text-align: center;
+    font-size: 10px;
+  }
+  #logo i{
+    padding-right: 10px;
+  }
     </style>
 </head>
 <body>
+  <div id="navbar">
   <ul>
     <li><a href="#">RAJASTHAN-TOUR</a></li>
     <li><a href="Home.html">Home</a></li>
     <li id="right"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
     <li id="right"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
   </ul>
+  </div>
     <div class="box">
     <h1>CONTACT US</h1>
     <h3>Questions which are not Answered ? we are here to Answer.</h3>
@@ -80,10 +150,30 @@
         <input type="email" required><br>
         Message <br>
         <input type="text" required ><br>
+        Phone Number<br>
+        <input type="number" required><br>
         <br>
         <input type="submit"  value="Thanks" style="text-align: center;">
     </div>
     </form>
+    </div>
+    <div id="footer">
+      <div id="map"></div>
+    <div id="footright"> 
+    <div id="Right">
+      <div id="image"> 
+        <img src="../images/IMG_20200815_211116.jpg" alt="">
+      </div>
+      <div id="logo">
+        <a href="https://github.com/vipulgupta22"><i class="fab fa-github fa-3x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vipul-gup-2204/"><i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </div>
+      <div id="boxer"> <div id="boxera"><a href="Home.html"><i class="fas fa-compass"></i> Travel with Us</a></div></div>
+    <h3> <i class="far fa-copyright"></i> 2020 RAJASTHAN-TOUR</h3>
+  </div>
+    </div>
     </div>
 </body>
 </html>
