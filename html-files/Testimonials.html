@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+      }
+     #navbar{
+            position: fixed;
+            background-color: darkslategrey;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 40px;
+        }
+     ul#navbar li {
+      float: left;
+    }
+    ul#navbar li a {
+      display: block;
+      color: #000000;
+      font-weight: bold;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    ul#navbar li a:hover {
+      color: white;
+    }
+    .navbar-brand img{
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    height: 30px;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pushkar-2811617__340.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+#banner h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#banner h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+#button{
+    width: 50px;
+    height: auto;
+    padding-top: 20px;
+    padding-left:41%;
+}
+#banner a{
+    text-decoration: none;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+#banner a:hover{
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+}
+#story{
+    width: 100%;
+    height: auto;
+    background-color: thistle;
+}
+#story h1{
+    text-align: center;
+    padding: 10px;
+}
+#box1{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#review{
+    padding-top: 10px;
+    width: 40%;
+    height:300px;
+    display: flex;
+    background-color: darkgray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#image,#content{
+    width: 45%;
+    height: 100%;
+}
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image img{
+    margin: auto;
+    width:250px;
+    height:250px;
+}
+#content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+#content p{
+    padding-top: 10px;
+}
+#footer{
+        width: 100%;
+         background-color:cornflowerblue;
+         height:auto;
+         }
+#Right{
+    display: flex;
+         align-items: center;
+         justify-content:space-evenly;
+}
+#boxer{
+           padding-bottom: 10px;
+       }
+  #boxer a{
+    text-decoration:none ;
+    color: black;
+  }
+  #boxer a:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  }
+  #boxera{
+    border: 3px solid black;
+    padding: 5px;
+  }
+  #Right h3{
+    text-align: center;
+    font-size: 10px;
+  }
+  #logo i{
+      padding: 10px;
+    padding-right: 10px;
+  }
+  .fab{
+    color: black;
+  }
+.copy{
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="navbar">
+          <a class="navbar-brand" href=""><img src="../images/IMG_20200815_211116.jpg" alt=""></a>
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Image-Gallery.html">IMAGE GALLERY</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="cont.html" id="right">CONTACT</a>
+          </li class="nav-item">
+          <li><a class="nav-link" href="About.html">ABOUT</a></li>
+        </ul>
+      </nav>
+      <div id="banner">
+          <div id="box-banner">
+              <h2>Our Customer Stoies</h2>
+              <h1>BETTER SERVICE START HERE</h1>
+              <div id="button"><a href="#story">Stories</a></div>
+          </div>
+      </div>
+      <div id="story">
+          <h1>What People Say !!!</h1>
+          <div id="box1">
+              <div id="review">
+                  <div id="image">
+                      <img src="../images/man1.jpg" alt="">
+                  </div>
+                  <div id="content">
+                      <div>
+                      <h1>Umesh Singh</h1>
+                      <h2>-Traveler</h2>
+                      <p>"The places in the state were so much amazing and exciting,, just unbeleivable to describe, the beauty,,,,!!!"</p>
+                      </div>
+                  </div>
+              </div>
+              <div id="review">
+                <div id="image">
+                    <img src="../images/man2.jpg" alt="">
+                </div>
+                <div id="content">
+                    <div>
+                    <h1>Tushar Saxena</h1>
+                    <h2>-Engineer</h2>
+                    <p>"The overall of the tour was great. It was value for money. The travel agent was very helpful and responded quickly for any queries. All the arrangements made for transfers was punctual. Our driver Mr Jitendra Singh was also very responsible, friendly and approachable."</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div id="box1">
+            <div id="review">
+                <div id="image">
+                    <img src="../images/man3.jpg" alt="">
+                </div>
+                <div id="content">
+                    <div>
+                    <h1>Vipul</h1>
+                    <h2>-Blogger</h2>
+                    <p>"I had gifted my brother a honeymoon package and Rajasthan-Tour provided with the best package and reasonable price. My brother and sister in law had a great honeymoon. Thanks to Rajasthan-Tour"</p>
+                    </div>
+                </div>
+            </div>
+            <div id="review">
+              <div id="image">
+                  <img src="../images/woman1.jpg" alt="">
+              </div>
+              <div id="content">
+                  <div>
+                  <h1>Mansi</h1>
+                  <h2>-Housewife</h2>
+                  <p>"I visited the Rajasthan through Rajasthan-Tour in month of February. All the arrangements were absolutely spot on. Highly recommend Rajasthan-Tour....keep up the good work... Thank you for near perfect tour."</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div id="box1">
+            <div id="review">
+                <div id="image">
+                    <img src="../images/woman2.jpg" alt="">
+                </div>
+                <div id="content">
+                    <div>
+                    <h1>Harshita</h1>
+                    <h2>-Traveler</h2>
+                    <p>"Wonderful trip - great accomodation at Jaipur, Jodhpur, Pushkar, Jaisalmer and Bikaner. Thanks to Rajasthan-Tour."</p>
+                    </div>
+                </div>
+            </div>
+            <div id="review">
+              <div id="image">
+                  <img src="../images/woman3.jpg" alt="">
+              </div>
+              <div id="content">
+                  <div>
+                  <h1>Radhika</h1>
+                  <h2>-Traveler</h2>
+                  <p>"We have visited Jaipur, Ranthambore, Ajmer & Pushkar.The whole trip was wonderfully organized by Travel Impact. We have been engaged through out the trip and the resorts which they have booked was very nice and vehicle provided also in good condition."</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="Right">
+            <div id="logo">
+              <a href="https://github.com/vipulgupta22"><i class="fab fa-github fa-3x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/vipul-gup-2204/"><i class="fab fa-linkedin fa-3x"></i>
+              </a>
+            </div>
+            <div id="boxer"> <div id="boxera"><a href="Home.html"><i class="fas fa-compass"></i> Travel with Us</a></div></div>
+        </div>
+        <div><h3 class="copy"> <i class="far fa-copyright"></i> 2020 RAJASTHAN-TOUR</h3></div>
+      </div>
+</body>
+</html>
