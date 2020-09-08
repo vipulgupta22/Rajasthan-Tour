@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
     <style>
       #banner{
         background-image: url(../images/pexels-sharad-bhat-3974152.jpg);
@@ -90,13 +91,31 @@ justify-content:center;
   padding-top: 15px;
 }
 #footer{
-  display:flex;
-flex-wrap:wrap;
-justify-content:center;
-background-color: chocolate;
+        display: flex;
+        color: white;
+        width: 100%;
+        height: auto;
+        background-color:black;
 font-size: 30px;
-padding: 10px;
-}
+    }
+#logo{
+        width:30%;
+        padding-top: 10px;
+        height: auto;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+#copyright{
+        width: 70%;
+    }
+#copyright h4{
+        float: right;
+        padding: 15px;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
     </style>
 </head>
 <body>
@@ -136,7 +155,15 @@ padding: 10px;
         <img id="images" src="../images/pexels-flashing-moment-797824 (1).jpg" alt="">
       </div>
       <div id="footer">
-        Made with ❤️ by Vipul
+        <div id="logo">
+          <a href="https://www.linkedin.com/in/vipul-gup-2204/" style="color:blue;"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100004879125005" style="color:blue;"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://github.com/vipulgupta22" style="color:blue;"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.instagram.com/its_vipul.gupta/" style="color:blue;"><i class="fab fa-instagram fa-2x"></i></a>
+         </div>
+         <div id="copyright">
+           <h4><i class="fas fa-copyright"></i> Rajasthan-Tour</h4>
+         </div>
       </div>     
 </body>
 </html>
